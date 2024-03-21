@@ -1,5 +1,4 @@
 import logo from '../../assets/logo_kasa.png'
-//import logo from '../assets/logo_kasa.png'
 //import '../styles/Header.css'
 
 function Header() {
