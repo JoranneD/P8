@@ -1,8 +1,8 @@
 import banner_img from '../../../assets/banner.png'
-//import '../styles/Header.css'
+import '../Banner/Banner.scss'
 
 function Banner() {
-    const banner_title = 'Chez vous, partout et ailleurs'
+    const banner_title = `Chez vous, partout et ailleurs`;
 
     return  <div className='kasa-banner'>
                 <img src={banner_img} alt='kasa-banner'></img>

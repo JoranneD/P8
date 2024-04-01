@@ -1,0 +1,27 @@
+.kasa-banner {
+	width: 100%;
+    height: 110px;
+    overflow: hidden;
+	border-radius: 25px;
+	position: relative;
+	
+	img {
+		width :100%;
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(0.3);
+	}
+
+	h1 {
+		color: white;
+		font-size: 24px;
+		position: absolute;
+		top: 36%;
+		left: 40%; //38
+		transform: translate(-50%, -50%);
+		color: white; /* Couleur du texte */
+		z-index: 1;
+		width: 70%;
+	}
+
+}
