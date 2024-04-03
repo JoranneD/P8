@@ -1,0 +1,21 @@
+.kasa-footer {
+  	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  	color: white;
+	background-color: black;
+	height: 210px;
+	
+
+	.kasa-logo {
+		height: 40px;
+		width: 122px;
+		filter: grayscale(100%) brightness(2);
+	}
+
+	p {
+		font-size: 12px;
+		width: 95px;
+	}
+}
