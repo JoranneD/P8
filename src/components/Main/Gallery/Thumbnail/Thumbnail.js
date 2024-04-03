@@ -1,4 +1,4 @@
-import thumbnail_img from '../../../assets/thumbnail.png'
+// import thumbnail_img from '../../../../assets/thumbnail.png'
 //import '../styles/Header.css'
 
 function Thumbnail() {
@@ -6,7 +6,7 @@ function Thumbnail() {
 
     return  <div className='thumbnail'>
                 {/* <img src={thumbnail_img} alt='kasa-thumbnail'></img> */}
-                <h2>{thumbnail_title}</h2>
+                <h2 className='thumbnail_title'>{thumbnail_title}</h2>
             </div> 
 }
 

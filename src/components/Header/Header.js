@@ -1,5 +1,5 @@
 import logo from '../../assets/logo_kasa.png'
-import '../Header/Header.scss'
+import '../Header/_header.scss'
 
 function Header() {
     const link_name_1 = 'Acceuil'

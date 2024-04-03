@@ -1,0 +1,71 @@
+/* Sizing */
+@mixin size($height:50px,$width:100%){
+    height: $height;
+    width: $width;
+}
+/* Spacing */
+@mixin margin($margin:0px,$padding:0px){
+    margin: $margin;
+    padding: $padding;
+}
+@mixin border($border:none,$radius:25px){
+    border: $border;
+    border-radius: $radius;
+}
+/* Typography */
+@mixin font($font:$general-font,$size: 28px,$weight: normal,$color:$black){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+/* Layout */
+@mixin flex($direction:row,$align:center,$justify:center,$gap:15px){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+@mixin position($top:unset,$left:unset,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1){
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    transform: $transorm;
+    z-index: $index;
+}
+
+/****** PREMADE ***********/
+@mixin box($height:50px,$width:100%,$border:none,$radius:25px, $overflow: unset, $position:unset){
+    height: $height;
+    width: $width;
+    border: $border;
+    border-radius: $radius;
+    overflow: $overflow;
+    position : $position;
+}
+@mixin button($width:70%,$height:50px,$border:none,$radius:25px){
+    cursor: pointer;
+    width: $width;
+    height: $height;
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin font-link($text-decoration: none,$color: black){
+    text-decoration: $text-decoration;
+    color: $color;
+}
+
+@mixin undertitle-deco($display: inline-block,$border: solid 5px #99E2D0,$padding: 10px) {
+    display: $display;
+    border-bottom: $border;
+    padding-bottom: $padding;
+}
+
+
+
+
+//  tag button title thumbnail rate/stars filter

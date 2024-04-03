@@ -1,5 +1,5 @@
-import Thumbnail from '../Gallery/Thumbnail.js'
-import '../Gallery/Gallery.scss'
+import Thumbnail from '../Gallery/Thumbnail/Thumbnail.js'
+import '../Gallery/_gallery.scss'
 
 function Gallery() {
 
