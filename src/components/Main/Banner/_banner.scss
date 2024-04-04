@@ -1,0 +1,18 @@
+@import '../../../styles/sass/utils/styling';
+
+.kasa-banner {
+	@include box($height:110px,$width:100%,$border:none,$radius:25px,$overflow:hidden,$position:relative);
+	@include border($border:none,$radius:10px);
+	
+	.banner-img {
+		@include size($height:100%,$width:100%);
+		object-fit: cover;
+		filter: brightness(0.3);
+	}
+
+	.banner-title {
+		@include font($font:$global-font,$size:24px, $weight:bold,$color:$white);
+		@include position($top:36%,$left:40%,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1);
+		width: 70%;
+	}
+}

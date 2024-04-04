@@ -1,0 +1,18 @@
+@import '../../styles/sass/utils/styling';
+
+.kasa-footer {
+	color: $white;
+	background-color: black;
+	@include flex($direction:column,$align:center,$justify:center,$gap:unset);
+	@include size($height:210px,$width:100%);
+  	
+	.kasa-logo {
+		@include size($height:40px,$width:122px);
+		filter: grayscale(100%) brightness(2);
+	}
+
+	.copyright {
+		font-size: 12px;
+		width: 95px;
+	}
+}

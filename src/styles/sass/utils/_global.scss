@@ -1,0 +1,17 @@
+@import './fonts';
+@import './mixins';
+@import './colors';
+
+/****** BODY ***********/
+body * {
+    font-family: $global-font;
+    // font-size: 16px;
+    // object-fit: cover;
+}
+
+#root {
+    @include flex($direction:column,$align:normal,$justify:normal,$gap:27px);
+    margin: auto;
+    width: inherit;
+}
+

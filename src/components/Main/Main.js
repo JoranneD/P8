@@ -1,6 +1,6 @@
 import Banner from './Banner/Banner.js'
 import Gallery from './Gallery/Gallery.js'
-import '../Main/Main.scss'
+import '../Main/_main.scss'
 
 function Main() {
     return (
