@@ -1,16 +1,13 @@
-.kasa-footer {
-  	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  	color: white;
-	background-color: black;
-	height: 210px;
-	
+@import '../../styles/sass/utils/styling';
 
+.kasa-footer {
+	color: $white;
+	background-color: black;
+	@include flex($direction:column,$align:center,$justify:center,$gap:unset);
+	@include size($height:210px,$width:100%);
+  	
 	.kasa-logo {
-		height: 40px;
-		width: 122px;
+		@include size($height:40px,$width:122px);
 		filter: grayscale(100%) brightness(2);
 	}
 

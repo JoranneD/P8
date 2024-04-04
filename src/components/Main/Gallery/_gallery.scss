@@ -1,4 +1,4 @@
-@import '../../styles/sass/utils/styling';
+@import '../../../styles/sass/utils/styling';
 
 .gallery {
 	@include box($height:255px,$width:100%,$border:none,$radius:10px,$overflow:hidden,$position:relative);
@@ -6,7 +6,7 @@
 	gap: 20px;
 
 	.thumbnail_title {
-		@include font($font: $general-font,$size: 18px, $weight:bold,$color:$white);
+		@include font($font: $global-font,$size: 18px, $weight:bold,$color:$white);
 		@include position($top:80%,$left:30%,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1);
 		width: 50%;
 	}

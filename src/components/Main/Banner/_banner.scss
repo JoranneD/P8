@@ -1,26 +1,18 @@
+@import '../../../styles/sass/utils/styling';
+
 .kasa-banner {
-	width: 100%;
-    height: 110px;
-    overflow: hidden;
-	border-radius: 10px;
-	position: relative;
+	@include box($height:110px,$width:100%,$border:none,$radius:25px,$overflow:hidden,$position:relative);
+	@include border($border:none,$radius:10px);
 	
 	.banner-img {
-		width :100%;
-		height: 100%;
+		@include size($height:100%,$width:100%);
 		object-fit: cover;
 		filter: brightness(0.3);
 	}
 
 	.banner-title {
-		color: white;
-		font-size: 24px;
-		position: absolute;
-		top: 36%;
-		left: 40%;
-		transform: translate(-50%, -50%);
-		color: white;
-		z-index: 1;
+		@include font($font:$global-font,$size:24px, $weight:bold,$color:$white);
+		@include position($top:36%,$left:40%,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1);
 		width: 70%;
 	}
 }

@@ -13,7 +13,7 @@
     border-radius: $radius;
 }
 /* Typography */
-@mixin font($font:$general-font,$size: 28px,$weight: normal,$color:$black){
+@mixin font($font:$global-font,$size: 28px,$weight: normal,$color:$black){
     font-family: $font;
     font-size: $size;
     font-weight: $weight;
@@ -46,6 +46,19 @@
     overflow: $overflow;
     position : $position;
 }
+@mixin title($font:$global-font,$size: 28px,$weight: normal,$color:$black,$top:unset,$left:unset,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    transform: $transorm;
+    z-index: $index;
+}
 @mixin button($width:70%,$height:50px,$border:none,$radius:25px){
     cursor: pointer;
     width: $width;
@@ -53,7 +66,6 @@
     border: $border;
     border-radius: $radius;
 }
-
 @mixin font-link($text-decoration: none,$color: black){
     text-decoration: $text-decoration;
     color: $color;
