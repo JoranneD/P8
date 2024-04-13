@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Thumbnail/_thumbnail.scss';
+import data from '../../../../datas/logements.json';
 
-function Thumbnail({ image, title }) {
-  return (
-    <div className="thumbnail">
-      <img src={image} alt={title} />
-      <h2 className="thumbnail_title">{title}</h2>
-    </div>
-  );
+function Thumbnail() {
+    const [thumbnails, setThumbnails] = useState([]);
+    const alt ='photo du logement';
+
+    useEffect(() => {
+      setThumbnails(data);
+    }, []);
+
+    return (
+        <div className="cards">
+            {thumbnails.map(card => (
+                <div className="card" key={card.id}>
+                    <img className="card-cover" src={card.cover} alt={alt} />
+                    <h2 className="card-title">{card.title}</h2>
+                </div>
+            ))}
+        </div>
+    );
 }
 
 export default Thumbnail;

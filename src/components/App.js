@@ -12,7 +12,7 @@ function App() {
                 <Route path="/home" element={<Home/>} />
                 {/* <Route path="/accomodations" element={<Accomodations/>} /> */}
                 {/* <Route path="/about" element={<About/>} /> */}
-                <Route path="/error" element={<NoPage/>} />
+                <Route path="*" element={<NoPage/>} />
             </Routes>
         </BrowserRouter>
     );
