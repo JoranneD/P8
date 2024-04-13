@@ -1,0 +1,23 @@
+@import '../../styles/sass/utils/styling';
+
+.error404 {
+    @include flex($direction:column,$align:center,$justify:normal,$gap:113px);
+    @include font($font:$global-font,$weight: bold,$color:$red);
+
+    .error404-title {
+        font-size: 96px;
+        font-weight: bold;
+    }
+
+    .error404-text {
+        font-size: 18px;
+        font-weight: normal;
+        width: 68%;
+    }
+
+    .error404-homelink {
+        font-size: 14px;
+        font-weight: normal;
+        color: $black;
+    }
+}
