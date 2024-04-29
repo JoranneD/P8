@@ -1,21 +1,22 @@
 // import React, { useState, useEffect } from 'react';
+// import { useHistory } from 'react-router-dom';
 // import Card from '../Card/Card.js'
 import Thumbnail from './Thumbnail/Thumbnail.js'
 import '../Gallery/_gallery.scss'
 // import data from '../../../datas/logements.json';
-// import { useHistory } from 'react-router-dom';
+
 
 // function Gallery() {
 //   const history = useHistory();
 
-//   const selectThumbnail = (id) => {
-//       history.push(`/card/${id}`); // Redirige vers la page de la carte avec l'ID correspondant
+//   const selectedCard = (id) => {
+//       history.push(`/card/${id}`);
 //   };
 
 //   return (
 //       <section className='gallery'>
 //           {data.map((card) => (
-//               <Thumbnail key={card.id} card={card} onClick={() => selectThumbnail(card.id)} />
+//               <Thumbnail key={card.id} card={card} onClick={() => selectedCard(card.id)} />
 //           ))}
 //       </section>
 //   );

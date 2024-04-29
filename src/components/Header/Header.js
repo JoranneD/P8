@@ -3,7 +3,7 @@ import '../Header/_header.scss'
 
 function Header() {
     const link_name_1 = 'Acceuil'
-    const link_url_1 = 'https://www.google.com/'
+    const link_url_1 = '/'
     const link_name_2 = 'À propos'
     const link_url_2 = 'https://www.google.com/'
 
