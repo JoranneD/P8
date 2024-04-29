@@ -1,0 +1,6 @@
+@import '../../styles/sass/utils/styling';
+
+.kasa-main {
+    @include flex($direction:column,$align:normal,$justify:normal,$gap:20px);
+    @include margin($margin: 0 20px,$padding:0px);
+}
