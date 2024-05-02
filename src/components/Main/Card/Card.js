@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 // import Carousel from './Carrousel';
 //import Host from './Host';
+import Collapse from './Collapse';
 import '../../Main/Card/_card.scss';
 import data from '../../../datas/logements.json';
 
@@ -23,25 +24,37 @@ function Card() {
 
     return (
         <div className="card">
-            <img className="card-cover-accomodation" src={selectedCard.cover} alt={selectedCard.title} />
-            <h2 className="card-title">{selectedCard.title}</h2>
             {/* <Carousel pictures={selectedCard.pictures} /> */}
-            <p className="card-description">Description: {selectedCard.description}</p>
-            <p>Location: {selectedCard.location}</p>
-            <p>Rating: {selectedCard.rating}</p>
-            {/* <Host name={selectedCard.host.name} picture={selectedCard.host.picture} /> */}
-            <h3>Équipements:</h3>
-            {/* <ul>
-                {selectedCard.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                ))}
-            </ul> */}
-            <h3>Tags:</h3>
-            {/* <ul>
+            <img className="card-cover-accomodation" src={selectedCard.cover} alt={selectedCard.title} />
+            
+            <div className="card-titles">
+                <h1 className="card-title">{selectedCard.title}</h1>
+                <p className="card-location">{selectedCard.location}</p>
+            </div>
+            
+            <ul className="card-tags">
                 {selectedCard.tags.map((tag, index) => (
-                    <li key={index}>{tag}</li>
+                    <li className="card-tag" key={index}>{tag}</li>
                 ))}
-            </ul> */}
+            </ul>
+
+            <div className="card-host-details">
+                <p className="card-rating">Rating: {selectedCard.rating}</p>
+                {/* <Host name={selectedCard.host.name} picture={selectedCard.host.picture} /> */}
+            </div>
+            
+            <div className="card-details">
+                <Collapse title="Description">
+                    <p>{selectedCard.description}</p>
+                </Collapse>
+                <Collapse title="Équipements">
+                    <ul>
+                        {selectedCard.equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                        ))}
+                    </ul>
+                </Collapse>
+           </div>
         </div>
     );
 }
