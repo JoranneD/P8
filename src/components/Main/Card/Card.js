@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 // import Carousel from './Carrousel';
-//import Host from './Host';
+import Host from './Host';
 import Collapse from './Collapse';
 import '../../Main/Card/_card.scss';
 import data from '../../../datas/logements.json';
@@ -40,7 +40,7 @@ function Card() {
 
             <div className="card-host-details">
                 <p className="card-rating">Rating: {selectedCard.rating}</p>
-                {/* <Host name={selectedCard.host.name} picture={selectedCard.host.picture} /> */}
+                <Host name ={selectedCard.host.name} picture={selectedCard.host.picture} />
             </div>
             
             <div className="card-details">
