@@ -39,6 +39,19 @@
 		@include flex($direction:row,$align:center,$justify:space-between,$gap:unset);
 		@include box($height:33px,$width:100%,$border:none,$radius:none,$overflow:unset,$position:unset);
 
+		.rating {
+			@include flex($direction:row,$align:normal,$justify:normal,$gap:2px);
+
+			.star-full {
+			color:$red;
+			}
+	
+			.star-empty {
+				color:$light-grey;
+			}
+		}
+		
+
 		.host {
 			@include flex($direction:row,$align:center,$justify:space-between,$gap:10px);
 
@@ -53,11 +66,8 @@
     			height: 32px;
 				border-radius: 50%;
 			}
-
 		}
 	}
-
-	
 }
 
 
