@@ -1,8 +1,8 @@
 @import '../../../styles/sass/utils/styling';
 
 .card {
-	// position: relative;
-	
+	@include flex($direction:column,$align:normal,$justify:normal,$gap:5px);
+
 	.card-cover-accomodation {
 		@include box($height:255px,$width:100%,$border:none,$radius:10px,$overflow:hidden,$position:relative);
 		background:$red-gradient;

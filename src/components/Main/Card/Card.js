@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import Carousel from './Carrousel';
+import Carousel from './Carousel';
 import Host from './Host';
 import Rating from './Rating';
 import Collapse from './Collapse';
@@ -25,8 +25,8 @@ function Card() {
 
     return (
         <div className="card">
-            {/* <Carousel pictures={selectedCard.pictures} /> */}
-            <img className="card-cover-accomodation" src={selectedCard.cover} alt={selectedCard.title} />
+            <Carousel pictures={selectedCard.pictures} />
+            {/* <img className="card-cover-accomodation" src={selectedCard.cover} alt={selectedCard.title} /> */}
             
             <div className="card-titles">
                 <h1 className="card-title">{selectedCard.title}</h1>
