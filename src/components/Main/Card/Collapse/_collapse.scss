@@ -1,0 +1,34 @@
+@import '../../../../styles//sass/utils/styling';
+
+.collapse {
+	@include font($font:$global-font,$size:13px,$weight:normal,$color:$black);
+
+	&-btn {
+		@include flex($direction:row-reverse,$align:center,$justify:space-between,$gap:unset);
+		@include font($font:$global-font,$size:13px,$weight:bold,$color:$white);
+		border: none;
+		border-radius: 5px;
+		background-color: $red;
+		width: 100%;
+		height: 30px;
+		text-align: start;
+		padding: 5px 10px;
+
+		.collapse-icon {
+			filter: invert(1);
+			transition: transform 0.3s ease;
+
+			&.open {
+				transform: rotate(-90deg);
+			}
+			
+			&.closed {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	.collapse-description {
+		padding: 10px 15px;
+	}
+}
