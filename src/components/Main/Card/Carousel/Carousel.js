@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import previousArrow from '../../../assets/arrow-back-ios.svg';
-import nextArrow from '../../../assets/arrow-forward-ios.svg';
-import './_carousel.scss';
+import previousArrow from '../../../../assets/arrow-back-ios.svg';
+import nextArrow from '../../../../assets/arrow-forward-ios.svg';
+import '../Carousel/_carousel.scss';
 
 function Carousel({ pictures }) {
     const [currentSlide, setCurrentSlide] = useState(0);

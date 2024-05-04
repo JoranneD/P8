@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import collapseIcon from '../../../assets/arrow-back-ios.svg';
+import collapseIcon from '../../../../assets/arrow-back-ios.svg';
+import '../Collapse/_collapse.scss';
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,6 @@ function Collapse({ title, children }) {
 }
 
 export default Collapse;
-
 //---------------------------
 // import React, { useState } from 'react';
 

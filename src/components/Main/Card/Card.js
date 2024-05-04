@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Carousel from './Carousel';
-import Host from './Host';
-import Rating from './Rating';
-import Collapse from './Collapse';
+import Carousel from './Carousel/Carousel';
+import Host from './Host/Host';
+import Rating from './Rating/Rating';
+import Collapse from './Collapse/Collapse';
 import '../../Main/Card/_card.scss';
 import data from '../../../datas/logements.json';
 
