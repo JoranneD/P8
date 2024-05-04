@@ -1,0 +1,6 @@
+@import '../../../styles/sass/utils/styling';
+
+.values {
+    @include flex($direction:column,$align:normal,$justify:normal,$gap:20px);
+
+}
