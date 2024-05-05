@@ -3,6 +3,11 @@
 .kasa-banner {
 	@include box($height:110px,$width:100%,$border:none,$radius:25px,$overflow:hidden,$position:relative);
 	@include border($border:none,$radius:10px);
+
+	@media screen and (min-width: $desktop) {
+		@include box($height:223px,$width:100%,$border:none,$radius:25px,$overflow:hidden,$position:relative);
+
+	}
 	
 	.banner-img {
 		@include size($height:100%,$width:100%);

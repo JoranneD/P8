@@ -3,7 +3,7 @@
 .kasa-footer {
 	color: $white;
 	background-color: black;
-	@include flex($direction:column,$align:center,$justify:center,$gap:unset);
+	@include flex($direction:column,$align:center,$justify:center,$gap:10px);
 	@include size($height:210px,$width:100%);
   	
 	.kasa-logo {

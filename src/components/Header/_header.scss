@@ -6,6 +6,17 @@
 	@include flex($direction:row,$align:center,$justify:space-between,$gap:unset);
 	@include margin($margin: 20px 20px 0,$padding:0px);
 
+	@media screen and (min-width: $desktop) {
+		margin: auto;
+		// margin-top:45px;
+        max-width: 1240px;
+		//@include margin($margin:45px auto auto ,$padding:0px);
+		//@include margin($margin: 45px 40px 0,$padding:0px);
+		@include flex($direction:row,$align:center,$justify:space-between,$gap:unset);
+		
+
+	}
+
 	.kasa-logo {
 		height: inherit;
 	}
