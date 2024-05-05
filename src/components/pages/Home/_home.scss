@@ -1,0 +1,15 @@
+@import '../../../styles/sass/utils/styling';
+
+.home-banner .banner-title {
+    @include font($font:$global-font,$size:24px, $weight:bold,$color:$white);
+    @include pose($top:12%,$left:4%,$right:unset,$bottom:unset);
+    width: 70%;
+
+    @media screen and (min-width: $tablet) {
+        @include pose($top:40%,$left:25%,$right:unset,$bottom:unset);
+    }
+
+    @media screen and (min-width: $desktop) {
+		@include pose($top:40%,$left:32%,$right:unset,$bottom:unset);
+    }
+}

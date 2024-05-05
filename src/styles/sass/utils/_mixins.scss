@@ -27,6 +27,13 @@
     justify-content: $justify;
     gap: $gap;
 }
+@mixin pose($top:unset,$left:unset,$right:unset,$bottom:unset){
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
 @mixin position($top:unset,$left:unset,$right:unset,$bottom:unset,$transorm:translate(-50%, -50%),$index:1){
     position: absolute;
     top: $top;

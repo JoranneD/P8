@@ -26,8 +26,7 @@ function Card() {
     return (
         <div className="card">
             <Carousel pictures={selectedCard.pictures} />
-            {/* <img className="card-cover-accomodation" src={selectedCard.cover} alt={selectedCard.title} /> */}
-            
+
             <div className="card-titles">
                 <h1 className="card-title">{selectedCard.title}</h1>
                 <p className="card-location">{selectedCard.location}</p>
