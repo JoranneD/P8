@@ -32,19 +32,45 @@ body * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    // @media screen and (min-width: $desktop) {
+}
+
+/****** Homepage etlogement ***********/
+// #root {
+//     @include flex($direction:column,$align:normal,$justify:normal,$gap:27px);
+//     margin: auto;
+//     width: inherit;
+
+//     @media screen and (min-width: $desktopXL) {
+// 		@include flex($direction:column,$align:normal,$justify:normal,$gap:50px);
+// 	}
+
+//     .content-wrapper {
+//         @include flex($direction:column,$align:normal,$justify:normal,$gap:27px);
+
+//         @media screen and (min-width: $desktopXL) {
+//             @include flex($direction:column,$align:normal,$justify:normal,$gap:50px);
+//             width: $desktopXL-box;
+//             margin: auto;
+//         }
+//     }
+// }
+
+
+
+// @media screen and (min-width: $desktop) {
+	// 	@include flex($direction:column,$align:normal,$justify:normal,$gap:50px);
     //     margin: auto;
     //     max-width: 1240px;
+    //     // Appliquer le max-width uniquement aux éléments enfants autres que footer
+    //     > :not(.kasa-footer) {
+    //         max-width: 1240px;
+    //     }
 	// }
 
-}
-
-#root {
-    @include flex($direction:column,$align:normal,$justify:normal,$gap:27px);
-    margin: auto;
-    width: inherit;
-
-    @media screen and (min-width: $desktop) {
-		@include flex($direction:column,$align:normal,$justify:normal,$gap:50px);
-	}
-}
+    // @media screen and (min-width: $desktop) {
+	// 	@include flex($direction:column,$align:normal,$justify:normal,$gap:50px);
+    //     // max-width: 1240px;
+    //     // &:not(footer) {
+    //     //     max-width: 1240px;
+    //     // }
+	// }

@@ -1,5 +1,59 @@
 @import '../../../styles/sass/utils/styling';
 
+#root.about, .content-wrapper.about-wrapper {
+    @include flex($direction: column, $align: normal, $justify: normal, $gap: 19px);
+    margin: auto;
+    width: inherit;
+
+    @media screen and (min-width: $desktopXL) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 38px);
+    }
+}
+
+.content-wrapper.about-wrapper {
+    width: $mobile-box;
+
+    @media screen and (min-width: $desktopXL) {
+        width: $desktopXL-box;
+    }
+}
+
+.kasa-header.about-header {
+    @media screen and (min-width: $desktopXL) {
+		margin-top: 45px;
+    }
+}
+
 .about-banner .banner-img {
     filter: brightness(0.8);
 }
+
+.kasa-main.about-main {
+	@media screen and (min-width: $desktopXL) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
+        width: $desktopXL-box;
+	}
+}
+
+.values {
+    @media screen and (min-width: $desktopXL) {
+        @include flex($direction:column,$align:normal,$justify:space-evenly,$gap:30px);
+        height: 298px;
+        width: 1023px;
+        margin: auto;
+	}
+}
+
+
+
+// #root.about {
+//     @media screen and (min-width: $desktopXL) {
+//         @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
+//     }
+
+//     .content-wrapper.about-wrapper {
+//         @media screen and (min-width: $desktopXL) {
+//             @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
+//         }
+//     }
+// }

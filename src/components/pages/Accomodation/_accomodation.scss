@@ -1,6 +1,32 @@
-@import '../../styles/sass/utils/styling';
+@import '../../../styles/sass/utils/styling';
 
-.kasa-main {
-    @include flex($direction:column,$align:normal,$justify:normal,$gap:20px);
-    @include margin($margin: 0 20px,$padding:0px);
+#root.accomodation, .content-wrapper.accomodation-wrapper {
+    @include flex($direction: column, $align: normal, $justify: normal, $gap: 27px);
+    margin: auto;
+    width: inherit;
+
+    @media screen and (min-width: $desktopXL) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 50px);
+    }
 }
+
+.content-wrapper.accomodation-wrapper {
+    width: $mobile-box;
+
+    @media screen and (min-width: $desktopXL) {
+        width: $desktopXL-box;
+    }
+}
+
+.kasa-header.accomodation-header {
+    @media screen and (min-width: $desktopXL) {
+		margin-top: 45px;
+    }
+}
+
+// .kasa-main.accomodation-main {
+// 	@media screen and (min-width: $desktopXL) {
+//         @include flex($direction:column,$align:normal,$justify:normal,$gap:unset);
+//         width: $desktopXL-box;
+// 	}
+// }

@@ -1,13 +1,13 @@
 import logo from '../../assets/logo_kasa.png'
 import '../Header/_header.scss'
 
-function Header() {
+function Header({ className }) {
     const link_name_1 = 'Acceuil'
     const link_url_1 = '/'
     const link_name_2 = 'À propos'
     const link_url_2 = '/about'
 
-    return  <header className='kasa-header'>
+    return  <header className={`kasa-header ${className}`}>
                 <img src={logo} className='kasa-logo' alt='kasa-logo'/>
                 <nav className='header-nav'>
                     <ul className='nav-list'>
