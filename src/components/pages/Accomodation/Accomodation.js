@@ -4,7 +4,7 @@ import Header from '../../Header/Header.js'
 import Main from '../../Main/Main.js'
 import Card from '../../Main/Card/Card.js';
 import Footer from '../../Footer/Footer.js'
-import '../../Main/_main.scss'
+import '../Accomodation/_accomodation.scss'
 import data from '../../../datas/logements.json';
 
 function Accomodation() {
@@ -16,16 +16,20 @@ function Accomodation() {
     // Si aucun logement n'est trouvé, l'utilisateur est redirigé vers la page 404
     if (!selectedAccomodation) {
       return <Navigate to="*" />;
-  }
+    }
 
     return (
-      <>
-        <Header/>
-        <Main>
-          <Card accomodation={selectedAccomodation} />
-        </Main>
-        <Footer/>
-      </>
+        <>
+            <div id='root' className="accomodation">
+                <div className="content-wrapper accomodation-wrapper">
+                    <Header className="accomodation-header"/>
+                    <Main className="accomodation-main">
+                        <Card accomodation={selectedAccomodation} />
+                    </Main>
+                </div>
+                <Footer/>
+            </div>
+        </>
     );
 }
 

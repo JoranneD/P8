@@ -1,8 +1,11 @@
-function Main({children}) {
+import React from 'react';
+import '../Main/_main.scss';
+
+function Main({children, className}) {
     return (
-        <div className="kasa-main">
+        <main className={`kasa-main ${className}`}>
             {children}
-        </div>
+        </main>
     );
 }
 
