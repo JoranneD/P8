@@ -13,7 +13,12 @@
 	}
 
 	.copyright {
-		font-size: 12px;
+		@include font($font: $global-font,$size: 12px, $weight:500,$color:$white);
 		width: 95px;
+
+		@media screen and (min-width: $desktopXL) {
+			@include font($font: $global-font,$size: 24px, $weight:500,$color:$white);
+            width: 400px;
+        }
 	}
 }

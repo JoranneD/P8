@@ -4,6 +4,13 @@
 	@include flex($direction:column,$align:center,$justify:center,$gap:unset);
 	@include box($height:255px,$width:100%,$border:none,$radius:10px, $overflow: unset, $position:relative);
 
+	.carousel-counter {
+		display: none;
+		@include font($font:$global-font,$size:18px, $weight:500,$color:$white);
+		@include pose($top:90%,$left:49%,$right:unset,$bottom:unset);
+        text-shadow: 1px 1px 2px $grey;  
+	}
+
 	.carousel-btn {
 		position: absolute;
 		background: none;

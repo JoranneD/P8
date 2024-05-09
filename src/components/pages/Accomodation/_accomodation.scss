@@ -25,6 +25,17 @@
 }
 
 .kasa-main.accomodation-main {
+    .carousel {
+        @media screen and (min-width: $desktopXL) {
+            height: 412px;          
+        }
+
+        .carousel-counter {
+            @media screen and (min-width: $desktopXL) {
+                display: block;  
+            }
+        }
+    }
     .card-title {
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size:36px, $weight:500,$color:$red);
@@ -33,6 +44,11 @@
     .card-location {
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size:18px, $weight:500,$color:$black);
+        }
+    }
+    .card-tag {
+        @media screen and (min-width: $desktopXL) {
+            height: 25px;    
         }
     }
     .card-host-details {
@@ -62,13 +78,25 @@
                 }
             }
         }
-    
-        .card-details {
+    }
+    .card-details {
+        @media screen and (min-width: $desktopXL) {
+            @include flex($direction: row, $align: normal, $justify: space-between, $gap:unset);
+        }
+
+        .collapse {
             @media screen and (min-width: $desktopXL) {
-                @include flex($direction: row, $align: normal, $justify: space-around, $gap:unset);
+                width:582px;            
+            }
+
+            .collapse-btn {
+                @media screen and (min-width: $desktopXL) {
+                    height: 52px;            
+                }
             }
         }
     }
+
 }
 
 

@@ -25,6 +25,9 @@ function Carousel({ pictures }) {
 
     return (
         <div className="carousel">
+            <div className="carousel-counter">
+                {currentSlide + 1} / {pictures.length}
+            </div>
             <button className="carousel-btn arrow arrow-left" onClick={prevSlide}><img src={previousArrow} alt="Précedent" /></button>
             <img className="carousel-img" src={pictures[currentSlide]} alt={alt} />
             <button className="carousel-btn arrow arrow-right" onClick={nextSlide}><img src={nextArrow} alt="Suivant" /></button>
