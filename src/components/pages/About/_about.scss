@@ -29,6 +29,8 @@
 }
 
 .kasa-main.about-main {
+    @include flex($direction:column,$align:normal,$justify:normal,$gap:19px);
+
 	@media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
         width: $desktopXL-box;

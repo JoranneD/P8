@@ -4,7 +4,7 @@ import '../Header/_header.scss'
 function Header({ className }) {
     const link_name_1 = 'Acceuil'
     const link_url_1 = '/'
-    const link_name_2 = 'À propos'
+    const link_name_2 = 'À Propos'
     const link_url_2 = '/about'
 
     return  <header className={`kasa-header ${className}`}>
