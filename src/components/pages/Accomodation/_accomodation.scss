@@ -24,6 +24,56 @@
     }
 }
 
+.kasa-main.accomodation-main {
+    .card-title {
+        @media screen and (min-width: $desktopXL) {
+            @include font($font:$global-font,$size:36px, $weight:500,$color:$red);
+        }
+    }
+    .card-location {
+        @media screen and (min-width: $desktopXL) {
+            @include font($font:$global-font,$size:18px, $weight:500,$color:$black);
+        }
+    }
+    .card-host-details {
+        @media screen and (min-width: $desktopXL) {
+            @include flex($direction: column-reverse, $align: flex-end, $justify: normal, $gap:20px);
+            position: relative;
+            top: -40px;
+            
+            .host {
+                @media screen and (min-width: $desktopXL) {
+                    @include flex($direction: row, $align: normal, $justify: normal, $gap:2px);
+                    gap: 38px;                
+                }
+
+                .host-name {
+                    @media screen and (min-width: $desktopXL) {
+                        @include flex($direction: row, $align: center, $justify: normal, $gap:2px);
+                        @include font($font:$global-font,$size:18px, $weight:500,$color:$red);
+                    }
+                }
+
+                .host-picture{
+                    @media screen and (min-width: $desktopXL) {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            }
+        }
+    
+        .card-details {
+            @media screen and (min-width: $desktopXL) {
+                @include flex($direction: row, $align: normal, $justify: space-around, $gap:unset);
+            }
+        }
+    }
+}
+
+
+
+
 // .kasa-main.accomodation-main {
 // 	@media screen and (min-width: $desktopXL) {
 //         @include flex($direction:column,$align:normal,$justify:normal,$gap:unset);
