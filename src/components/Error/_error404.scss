@@ -3,23 +3,19 @@
 .error404 {
     @include flex($direction:column,$align:center,$justify:normal,$gap:113px);
     @include font($font:$global-font,$weight: bold,$color:$red);
-    margin-top: 60px;
 
     .error404-title {
-        font-size: 96px;
-        font-weight: bold;
+        @include font($font:$global-font,$size: 96px,$weight: bold,$color:$red);
+        
     }
 
     .error404-text {
-        font-size: 18px;
-        font-weight: 500;
+        @include font($font:$global-font,$size: 18px,$weight: 500,$color:$red);
         width: 70%;
         text-align: center;
     }
 
     .error404-homelink {
-        font-size: 14px;
-        font-weight: 500;
-        color: $black;
+        @include font($font:$global-font,$size: 14px,$weight: 500,$color:$black);
     }
 }

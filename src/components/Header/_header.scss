@@ -22,12 +22,22 @@
 
 	.nav-list {
 		@include flex($direction:row,$align:center,$justify:space-between,$gap:25px);
+		@include font($font:$global-font,$size: 12px,$weight: 500,$color:$black);
 		list-style-type: none;
 		text-transform: uppercase;
-		font-size: 12px;
+
+		@media screen and (min-width: $desktopXL) {
+			@include font($font:$global-font,$size: 24px,$weight: 500,$color:$black);
+			text-transform: none;
+		}
 	
 		.nav-link {
-			text-decoration-line: none;
+			text-decoration: none;
+			color:$black;
+
+			&:hover, &:active {
+				text-decoration: underline;
+			}
 		}
 	}
 }
