@@ -16,6 +16,11 @@
 		@include font($font: $global-font,$size: 12px, $weight:500,$color:$white);
 		width: 95px;
 
+		@media screen and (min-width: $tablet) {
+			@include font($font: $global-font,$size: 18px, $weight:500,$color:$white);
+            width: 150px;
+		}
+
 		@media screen and (min-width: $desktopXL) {
 			@include font($font: $global-font,$size: 24px, $weight:500,$color:$white);
             width: 400px;

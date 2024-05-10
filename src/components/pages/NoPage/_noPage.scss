@@ -5,6 +5,10 @@
     margin: auto;
     width: inherit;
 
+    @media screen and (min-width: $tablet) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 125px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 139px);
     }
@@ -13,42 +17,69 @@
 .content-wrapper.noPage-wrapper {
     width: $mobile-box;
 
+    @media screen and (min-width: $tablet) {
+        width: $tablet-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }
 }
 
 .kasa-header.noPage-header {
+    @media screen and (min-width: $tablet) {
+        margin-top: 30px;
+    }
+
     @media screen and (min-width: $desktopXL) {
 		margin-top: 40px;
     }
 }
 
 .kasa-main.noPage-main {
+    @media screen and (min-width: $tablet) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:125px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:normal,$gap:139px);
-
     }
 }
 
 .error404 {
+    @media screen and (min-width: $tablet) {
+        @include flex($direction:column,$align:center,$justify:normal,$gap:125px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:center,$justify:normal,$gap:139px);
     }
     
     .error404-title {
+        @media screen and (min-width: $tablet) {
+            @include font($font:$global-font,$size: 150px,$weight: bold,$color:$red);
+        }
+
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size: 288px,$weight: bold,$color:$red);
         } 
     }
 
     .error404-text {
+        @media screen and (min-width: $tablet) {
+            @include font($font:$global-font,$size: 24px,$weight: bold,$color:$red);
+        }
+
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size: 36px,$weight: bold,$color:$red);
         }
     }
 
     .error404-homelink {
+        @media screen and (min-width: $tablet) {
+            @include font($font:$global-font,$size: 16px,$weight: bold,$color:$black);
+        }
+
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size: 18px,$weight: bold,$color:$black);
         }
