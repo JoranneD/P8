@@ -9,6 +9,10 @@
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 35px);
     }
 
+    @media screen and (min-width: $desktop) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 45px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 50px);
     }
@@ -21,6 +25,10 @@
         width: $tablet-box;
     }
 
+    @media screen and (min-width: $desktop) {
+        width: $desktop-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }
@@ -29,6 +37,10 @@
 .kasa-header.home-header {
     @media screen and (min-width: $tablet) {
         margin-top: 35px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
     }
 
     @media screen and (min-width: $desktopXL) {
@@ -47,9 +59,10 @@
         width: auto;
     }
 
-    // @media screen and (min-width: $desktop) {
-	//     @include pose($top:40%,$left:32%,$right:unset,$bottom:unset);
-    // }
+    @media screen and (min-width: $desktop) {
+        @include font($font:$global-font,$size:40px, $weight:bold,$color:$white);
+	    @include pose($top:40%,$left:12%,$right:unset,$bottom:unset);
+    }
 
     @media screen and (min-width: $desktopXL) {
         @include font($font:$global-font,$size:48px, $weight:bold,$color:$white);
@@ -64,9 +77,44 @@
         @include flex($direction:column,$align:normal,$justify:normal,$gap:28px);
     }
 
+    @media screen and (min-width: $desktop) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:32px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:normal,$gap:43px);
     }
+}
+
+//Thumbnails
+.cards {
+	@media screen and (min-width: $tablet) {
+        @include flex($direction:row,$align:normal,$justify:center,$gap:33px);
+		flex-wrap: wrap;
+    }
+
+	@media screen and (min-width: $desktop) {
+		@include flex($direction:row,$align:normal,$justify:center,$gap:30px);
+		flex-wrap: wrap;
+	}
+
+	.card {
+		@media screen and (min-width: $tablet) {
+			max-width: 47%;
+		}
+
+		@media screen and (min-width: $desktop) {
+			max-width: 30%;
+			height: 240px;
+			width:240px;
+		}
+
+        @media screen and (min-width: $desktopXL) {
+			max-width: 31%;
+			height: 340px;
+			width:340px;
+		}
+	}
 }
 
 

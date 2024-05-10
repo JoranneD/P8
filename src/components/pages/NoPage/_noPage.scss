@@ -9,6 +9,10 @@
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 125px);
     }
 
+    @media screen and (min-width: $desktop) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 130px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 139px);
     }
@@ -21,6 +25,10 @@
         width: $tablet-box;
     }
 
+    @media screen and (min-width: $desktop) {
+        width: $desktop-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }
@@ -29,6 +37,10 @@
 .kasa-header.noPage-header {
     @media screen and (min-width: $tablet) {
         margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
     }
 
     @media screen and (min-width: $desktopXL) {
@@ -41,6 +53,10 @@
         @include flex($direction:column,$align:normal,$justify:normal,$gap:125px);
     }
 
+    @media screen and (min-width: $desktop) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:130px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:normal,$gap:139px);
     }
@@ -49,6 +65,10 @@
 .error404 {
     @media screen and (min-width: $tablet) {
         @include flex($direction:column,$align:center,$justify:normal,$gap:125px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flex($direction:column,$align:center,$justify:normal,$gap:130px);
     }
 
     @media screen and (min-width: $desktopXL) {
@@ -60,6 +80,10 @@
             @include font($font:$global-font,$size: 150px,$weight: bold,$color:$red);
         }
 
+        @media screen and (min-width: $desktop) {
+            @include font($font:$global-font,$size: 210px,$weight: bold,$color:$red);
+        } 
+
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size: 288px,$weight: bold,$color:$red);
         } 
@@ -70,6 +94,10 @@
             @include font($font:$global-font,$size: 24px,$weight: bold,$color:$red);
         }
 
+        @media screen and (min-width: $desktop) {
+            @include font($font:$global-font,$size: 30px,$weight: bold,$color:$red);
+        }
+
         @media screen and (min-width: $desktopXL) {
             @include font($font:$global-font,$size: 36px,$weight: bold,$color:$red);
         }
@@ -77,6 +105,10 @@
 
     .error404-homelink {
         @media screen and (min-width: $tablet) {
+            @include font($font:$global-font,$size: 14px,$weight: bold,$color:$black);
+        }
+
+        @media screen and (min-width: $desktop) {
             @include font($font:$global-font,$size: 16px,$weight: bold,$color:$black);
         }
 

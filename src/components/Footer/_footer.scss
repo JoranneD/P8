@@ -21,6 +21,11 @@
             width: 150px;
 		}
 
+		@media screen and (min-width: $desktop) {
+			@include font($font: $global-font,$size: 22px, $weight:500,$color:$white);
+            width: 350px;
+        }
+
 		@media screen and (min-width: $desktopXL) {
 			@include font($font: $global-font,$size: 24px, $weight:500,$color:$white);
             width: 400px;

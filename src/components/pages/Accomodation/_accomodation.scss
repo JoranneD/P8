@@ -9,6 +9,10 @@
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 35px);
     }
 
+    @media screen and (min-width: $desktop) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 45px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 50px);
     }
@@ -21,6 +25,10 @@
         width: $tablet-box;
     }
 
+    @media screen and (min-width: $desktop) {
+        width: $desktop-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }
@@ -29,6 +37,10 @@
 .kasa-header.accomodation-header {
     @media screen and (min-width: $tablet) {
         margin-top: 35px
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
     }
 
     @media screen and (min-width: $desktopXL) {
@@ -43,6 +55,11 @@
         }
 
         .carousel-counter {
+            @media screen and (min-width: $desktop) {
+                display: block;
+                @include font($font:$global-font,$size:14px, $weight:500,$color:$white);
+            }
+
             @media screen and (min-width: $desktopXL) {
                 display: block;  
             }

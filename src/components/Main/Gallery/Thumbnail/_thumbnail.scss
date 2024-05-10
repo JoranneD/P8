@@ -3,28 +3,28 @@
 .cards {
 	@include flex($direction:column,$align:center,$justify:center,$gap:20px);
 
-	@media screen and (min-width: $tablet) {
-        @include flex($direction:row,$align:normal,$justify:center,$gap:33px);
-		flex-wrap: wrap;
-    }
+	// @media screen and (min-width: $tablet) {
+    //     @include flex($direction:row,$align:normal,$justify:center,$gap:33px);
+	// 	flex-wrap: wrap;
+    // }
 
-	@media screen and (min-width: $desktop) {
-		@include flex($direction:row,$align:normal,$justify:center,$gap:30px);
-		flex-wrap: wrap;
-	}
+	// @media screen and (min-width: $desktop) {
+	// 	@include flex($direction:row,$align:normal,$justify:center,$gap:30px);
+	// 	flex-wrap: wrap;
+	// }
 
 	.card {
 		position: relative;
 
-		@media screen and (min-width: $tablet) {
-			max-width: 47%;
-		}
+		// @media screen and (min-width: $tablet) {
+		// 	max-width: 47%;
+		// }
 
-		@media screen and (min-width: $desktop) {
-			max-width: 31%;
-			height: 340px;
-			width:340px;
-		}
+		// @media screen and (min-width: $desktop) {
+		// 	max-width: 31%;
+		// 	height: 340px;
+		// 	width:340px;
+		// }
 		
 		.card-cover {
 			@include box($height:100%,$width:100%,$border:none,$radius:10px,$overflow:hidden,$position:relative);
