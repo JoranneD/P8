@@ -7,9 +7,15 @@
 	color: $black;
 	margin-top: 20px;
 	
-	// @media screen and (min-width: $desktop) {
-	// 	@include margin($margin: 45px 40px 0,$padding:0px);
-	// }
+	@media screen and (min-width: $tablet) {
+        height:58px;
+        width: $tablet-box;
+    }
+
+	@media screen and (min-width: $desktop) {
+        height:64px;
+        width: $desktop-box;
+    }
 
 	@media screen and (min-width: $desktopXL) {
 		height:68px;
@@ -25,6 +31,15 @@
 		@include font($font:$global-font,$size: 12px,$weight: 500,$color:$black);
 		list-style-type: none;
 		text-transform: uppercase;
+
+		@media screen and (min-width: $tablet) {
+			@include font($font:$global-font,$size: 16px,$weight: 500,$color:$black);
+		}
+
+		@media screen and (min-width: $desktop) {
+			@include font($font:$global-font,$size: 20px,$weight: 500,$color:$black);
+			text-transform: none;
+		}
 
 		@media screen and (min-width: $desktopXL) {
 			@include font($font:$global-font,$size: 24px,$weight: 500,$color:$black);

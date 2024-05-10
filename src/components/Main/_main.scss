@@ -4,6 +4,14 @@
     @include flex($direction:column,$align:normal,$justify:normal,$gap:unset);
     width: $mobile-box; 
 
+    @media screen and (min-width: $tablet) {
+        width: $tablet-box;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }

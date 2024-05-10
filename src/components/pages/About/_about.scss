@@ -5,6 +5,14 @@
     margin: auto;
     width: inherit;
 
+    @media screen and (min-width: $tablet) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 35px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flex($direction: column, $align: normal, $justify: normal, $gap: 36px);
+    }
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction: column, $align: normal, $justify: normal, $gap: 38px);
     }
@@ -13,12 +21,28 @@
 .content-wrapper.about-wrapper {
     width: $mobile-box;
 
+    @media screen and (min-width: $tablet) {
+        width: $tablet-box;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop-box;
+    }
+
     @media screen and (min-width: $desktopXL) {
         width: $desktopXL-box;
     }
 }
 
 .kasa-header.about-header {
+    @media screen and (min-width: $tablet) {
+        margin-top: 35px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
+    }
+
     @media screen and (min-width: $desktopXL) {
 		margin-top: 45px;
     }
@@ -31,6 +55,14 @@
 .kasa-main.about-main {
     @include flex($direction:column,$align:normal,$justify:normal,$gap:19px);
 
+    @media screen and (min-width: $tablet) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:28px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flex($direction:column,$align:normal,$justify:normal,$gap:32px);
+    }
+
 	@media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
         width: $desktopXL-box;
@@ -38,24 +70,21 @@
 }
 
 .values {
+    @media screen and (min-width: $tablet) {
+        @include flex($direction:column,$align:normal,$justify:space-evenly,$gap:10px);
+        @include box($height:210px,$width:$tablet-box,$border:none,$radius:unset, $overflow: unset, $position:unset);
+        margin: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include flex($direction:column,$align:normal,$justify:space-evenly,$gap:20px);
+        @include box($height:255px,$width:$desktop-box,$border:none,$radius:unset, $overflow: unset, $position:unset);
+        margin: auto;
+	}
+
     @media screen and (min-width: $desktopXL) {
         @include flex($direction:column,$align:normal,$justify:space-evenly,$gap:30px);
-        height: 298px;
-        width: 1023px;
+        @include box($height:298px,$width:1023px,$border:none,$radius:unset, $overflow: unset, $position:unset);
         margin: auto;
 	}
 }
-
-
-
-// #root.about {
-//     @media screen and (min-width: $desktopXL) {
-//         @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
-//     }
-
-//     .content-wrapper.about-wrapper {
-//         @media screen and (min-width: $desktopXL) {
-//             @include flex($direction:column,$align:normal,$justify:normal,$gap:38px);
-//         }
-//     }
-// }
