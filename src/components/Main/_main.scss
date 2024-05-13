@@ -16,26 +16,3 @@
         width: $desktopXL-box;
     }
 }
-
-// .kasa-main {
-//     @include flex($direction:column,$align:normal,$justify:normal,$gap:20px);
-//     @include margin($margin: 0 20px,$padding:0px);
-
-//     @media screen and (min-width: $tablet) {
-//         @include flex($direction:column,$align:normal,$justify:normal,$gap:33px);
-//     }
-
-// 	@media screen and (min-width: $desktop) {
-//         @include flex($direction:column,$align:normal,$justify:normal,$gap:43px);
-//         @include margin($margin: 0 40px,$padding:0px);
-// 	}
-// }
-
-// @media screen and (min-width: $tablet) {
-    //     @include flex($direction:column,$align:normal,$justify:normal,$gap:33px);
-    // }
-
-	// @media screen and (min-width: $desktop) {
-    //     @include flex($direction:column,$align:normal,$justify:normal,$gap:43px);
-    //     @include margin($margin: 0 40px,$padding:0px);
-	// }
